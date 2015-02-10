@@ -1,0 +1,14 @@
+! 
+! zebra config file
+!
+hostname <%= scope.lookupvar('quagga::params::hostname') %>
+!
+#password <%= @password %>
+password <%= scope.lookupvar('quagga::params::password') %>
+#enable password <%= @enable_password %>
+enable password <%= scope.lookupvar('quagga::params::enable') %>
+!
+#log file <%= @log_file %>
+log file <%= scope.lookupvar('quagga::params::zebra_logfile') %>
+!
+!
