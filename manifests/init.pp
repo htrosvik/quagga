@@ -12,16 +12,17 @@
 # Apache v2
 
 class quagga (
-  $zebra = true,
-  $ospfd = false,
+  $zebra  = true,
   $bgpd   = false,
-  $ospfd  = false,
+  $ospfd  = true,
   $ospf6d = false,
   $ripd   = false,
   $ripngd = false,
   $isisd  = false,
   $babeld = false,
 ) {
+
+  $hostname = 'leaf3'
   
   include quagga::params
   

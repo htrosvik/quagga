@@ -25,37 +25,37 @@ zebra=yes
 <% else %>
 zebra=no
 <% end  %>
-<% if scope.lookupvar('quagga::params::bgpd') %>
+<% if scope.lookupvar('quagga::bgpd') %>
 bgpd=yes
 <% else %>
 bgpd=no
 <% end  %>
-<% if scope.lookupvar('quagga::params::ospfd') %>
+<% if scope.lookupvar('quagga::ospfd') %>
 ospfd=yes
 <% else %>
 ospfd=no
 <% end  %>
-<% if scope.lookupvar('quagga::params::ospf6d') %>
+<% if scope.lookupvar('quagga::ospf6d') %>
 ospf6d=yes
 <% else %>
 ospf6d=no
 <% end  %>
-<% if scope.lookupvar('quagga::params::ripd') %>
+<% if scope.lookupvar('quagga::ripd') %>
 ripd=yes
 <% else %>
 ripd=no
 <% end  %>
-<% if scope.lookupvar('quagga::params::ripngd') %>
+<% if scope.lookupvar('quagga::ripngd') %>
 ripngd=yes
 <% else %>
 ripngd=no
 <% end  %>
-<% if scope.lookupvar('quagga::params::isisd') %>
+<% if scope.lookupvar('quagga::isisd') %>
 isisd=yes
 <% else %>
 isisd=no
 <% end  %>
-<% if scope.lookupvar('quagga::params::babeld') %>
+<% if scope.lookupvar('quagga::babeld') %>
 babeld=yes
 <% else %>
 babeld=no
